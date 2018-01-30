@@ -30,7 +30,7 @@ class CreateTwilioConference
   end
 
   def handle_open_line(response)
-    response.Say 'WHAT THE FUCK ANDREW - MUA HA HA'
+    response.Say 'Thank you for calling Rentsito. Please hold while we try to connect you with a representitive'
     response.Dial callerId: caller do |call|
       call.Conference 'conf',
                    startConferenceOnEnter: true,
