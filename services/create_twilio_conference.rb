@@ -30,7 +30,7 @@ class CreateTwilioConference
   end
 
   def handle_open_line(response)
-    response.Say 'Andrew your app is BROKEN!'
+    response.Say 'WHAT THE FUCK ANDREW - MUA HA HA'
     response.Dial callerId: caller do |call|
       call.Conference 'conf',
                    startConferenceOnEnter: true,
