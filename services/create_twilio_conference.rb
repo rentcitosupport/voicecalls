@@ -34,7 +34,7 @@ class CreateTwilioConference
     response.Dial callerId: caller do |call|
       call.Conference 'conf',
                    startConferenceOnEnter: true,
-                   maxParticipants: 2,
+                   maxParticipants: 1,
                    endConferenceOnExit: true,
                    record: 'record-from-start'
     end
